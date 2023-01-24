@@ -1,0 +1,288 @@
+html{
+    font-size: 16px;
+    background-color: #8C7E6C;
+}
+
+a {
+    text-decoration: none; 
+}
+
+ /*header*/
+header {
+    background-color: #dc2615;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top-left-radius: 1.5rem;
+    border-top-right-radius: 1.5rem;
+}
+
+header .motivational_quote {
+    width: 30rem;
+    text-align: center;
+    font-family: "Signika", sans-serif;
+    font-size: 1.5rem;
+    color: #0F1640;
+    font-style: italic;
+}
+
+header .logo {
+    color: #940202;
+    text-shadow: #0F1640;
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: 'Offside', cursive;
+    padding: 0;
+    line-height: 0.7;
+}
+
+header .nav {
+    width: 30rem;
+}
+
+header .nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+header .nav li a {
+    font-family: "Signika", sans-serif;
+    font-size: 1.5rem;
+    color: #0F1640;
+    padding: 0;
+    margin: 0 2rem 0 0;
+}
+
+header .nav li a:hover {
+    border-radius: 0.5rem;
+    background-color: #A63F3F;
+    padding: 0.3rem;
+}
+
+/*mission*/
+
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+main #mission {
+    display: flex;
+    align-items: center;
+    background-image: url(./images/mission_banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 40rem;
+}
+
+main #mission .content {
+    box-sizing: border-box;
+    text-align: right;
+    background-color: hsla(0, 45%, 70%, 0.6);
+    margin: 25rem 0 10rem 0;
+    width: 100%;
+}
+
+main #mission .content h1 {
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: 'Offside', cursive;
+    padding: 0 5rem 0 0;
+    line-height: 0.7;
+    text-align: right;
+    color: #0F1640;
+}
+
+main #mission .content p {
+    font-family: "Signika", sans-serif;
+    font-size: 1.5rem;
+    padding: 0 5rem 0 10rem;
+    text-align: justify;
+    color: #0F1640;
+    font-weight: 200;
+}
+
+/*Portfolio*/
+
+main #portfolio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+
+main #portfolio .title {
+    font-family: "Signika", sans-serif;
+    font-size: 3rem;
+    margin: 0.5rem auto 2rem;
+    text-align: center;
+    color: #dc2615;
+    line-height: 0.5;
+}
+
+main #portfolio .examples {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.circle_container {
+    box-sizing: border-box;
+    width: 20rem;
+    height: 20rem;
+    margin: 1rem 3rem;
+    border-radius: 50%;
+}
+
+.circle_container img {
+    box-sizing: border-box;
+    width: 20rem;
+    height: 20rem;
+    margin: 0;
+    border-radius: 50%;
+    display: flex;
+    align-content: center;
+}
+
+.hover_content {
+    display: none;
+}
+
+.circle_container:hover img {
+    opacity: 0.3;
+}
+
+.circle_container:hover .hover_content {
+    display: block;
+    position: relative;
+    top: -53%;
+    margin: 0 auto;
+    text-align: center;
+    color:#dc2615;
+    font-family: "Signika", sans-serif;
+    font-size: 2rem;
+}
+
+/*team*/
+
+main #team {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #0F1640;
+    padding-bottom: 2rem;
+}
+
+main #team .title {
+    font-family: "Signika", sans-serif;
+    font-size: 3rem;
+    margin: 0.5rem auto 2rem;
+    text-align: center;
+    line-height: 0.5;
+    color:#8C7E6C;
+}
+
+main #team .examples {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+main .rectangle_container {
+    box-sizing: border-box;
+    width: 18rem;
+    height: 25rem;
+    margin: 1rem 3rem;
+    display: flex;
+    align-items: flex-end;
+}
+
+main .rectangle_container .identification {
+    box-sizing: border-box;
+    background-color: hsla(0, 45%, 70%, 0.6);
+    width: 17rem;
+    margin: 0 auto;
+    display: inline-block;
+    position: absolute;
+    margin: 0 0 1rem 1rem;
+}
+
+.identification h3 {
+    font-family: "Signika", sans-serif;
+    color:#0F1640;
+    font-weight: 600;
+    text-align: end;
+    padding: 0.2rem 0.5rem 0 0;
+    margin: 0;
+}
+
+.identification h4 {
+    font-family: "Signika", sans-serif;
+    color:#0F1640;
+    font-weight: 300;
+    text-align: end;
+    padding: 0.2rem 0.5rem 1rem 0;
+    margin: 0;
+}
+
+main .rectangle_container img {
+    width: 18rem;
+    height: 25rem;
+    margin: 0 auto;
+
+}
+
+
+/*footer*/
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #dc2615;
+    border-bottom-left-radius: 1.5rem;
+    border-bottom-right-radius: 1.5rem;
+    position: static;
+}
+
+footer .contact {
+    width: 30rem;
+    text-align: center;
+    margin: 0.5rem auto;
+    }
+
+footer .logo {
+    color: #940202;
+    text-shadow: #0F1640;
+    font-size: 3rem;
+    font-weight: bolder;
+    font-family: 'Offside', cursive;
+    padding: 0;
+    line-height: 0.5;
+}
+/*
+footer .location {
+    border: 1px solid red;
+    width: 30rem;
+    text-align: center;
+    margin: 0.5rem auto;
+}*/
+
+footer .contact p {
+    padding: 0;
+    margin: 0 auto;
+    font-family: "Signika", sans-serif;
+    color:#0F1640;
+    font-weight: 300;
+    font-size: 1rem;
+}
